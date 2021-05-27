@@ -4,7 +4,7 @@ import { StyleSheet, Text } from 'react-native';
 
 export default WebviewScreen = ()=> {
   return <WebView style={styles.container}
-    source ={{uri: 'https://tramitesenlinea.policia.gob.ni/Denuncia.aspx'}}
+    source ={{uri:'https://tramitesenlinea.policia.gob.ni/DenunciaL.aspx'}}
     />
 }
 

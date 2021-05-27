@@ -6,12 +6,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeScreen from './HomeScreen';
-import CoCard from './Card'
+//import CoCard from './Card'
+import InfoScreen from './info';
 import DetailsScreen from './DetailsScreen';
 import ExploreScreen from './ExploreScreen';
 import ProfileScreen from './ProfileScreen';
 import WebviewScreen from './WebviewScreen';
-import ServiScreen  from './ServiScreen'
+import ServiScreen  from './ServiScreen';
 import { TabRouter } from '@react-navigation/routers';
 import { DrawerContent } from './DrawerContent';
 
@@ -21,7 +22,7 @@ const DetailsStack = createStackNavigator();
 const ProfilesStack = createStackNavigator();
 const ExploresStack = createStackNavigator();
 const ServiStack=createStackNavigator();
-
+const InfoStack=createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
 const MainTabScreen = () => (
@@ -62,10 +63,19 @@ const MainTabScreen = () => (
             <Icon name="ios-map" color={color} size={26} />
           ),
         }}
+     />
+      <Tab.Screen
+        name="Info"
+        component={InfoStackScreen}
+        options={{
+          tabBarLabel: 'Información',
+        
+          tabBarColor: '#FAAD2A',
+          tabBarIcon: ({ color }) => (
+            <Icon name="ios-Info" color={color} size={26} />
+          ),
+        }}
       />
-
-    
-
        <Tab.Screen
         name="Settings"
         component={DrawerContent}
@@ -185,13 +195,33 @@ const ProfileStackScreen = ({navigation}) => (
             fontWeight: 'bold'
             }
         }}>
-            <ExploresStack.Screen name="Setting" component={ExploreScreen} options={{
-            title:'Ajuste',
+          <ExploresStack.Screen name="Setting" component={ExploreScreen} options={{
+            title:'Informacion',
+           /*headerLeft: () => (
+            <Icon.Button name="ios-menu" size={25} backgroundColor="#EF578E" onPress={() => navigation.openDrawer()}></Icon.Button>
+        )*/
+         }} />
+    
+  </ExploresStack.Navigator>
+  );
+
+  const InfoStackScreen = ({navigation}) => (
+    <InfoStack.Navigator screenOptions={{
+            headerStyle: {
+            backgroundColor: '#d02860',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+            fontWeight: 'bold'
+            }
+        }}>
+            <InfoStack.Screen name="informacion" component={InfoScreen} options={{
+            title:'Informacion',
            /*headerLeft: () => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#EF578E" onPress={() => navigation.openDrawer()}></Icon.Button>
         )*/
             }} />
     
-    </ExploresStack.Navigator>
+    </InfoStack.Navigator>
   );
   
