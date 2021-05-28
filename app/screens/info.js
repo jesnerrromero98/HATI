@@ -5,6 +5,12 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 
 export default class Info extends Component {
+  onPressx = () => {
+    this.props.navigation.navigate('Infor')
+  };
+  onPressxx = () => {
+    this.props.navigation.navigate('Informa')
+  };
   render() {
     return (
 
@@ -32,9 +38,12 @@ export default class Info extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Button  style={styles.But2}>
+                <Button onPress={this.onPressx} style={styles.But2}>
                   
+    
                   <Text style={styles.ti1}>Leer mas</Text>
+                  
+        
                 </Button>
               </Left>
             </CardItem>
@@ -63,7 +72,7 @@ export default class Info extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Button  style={styles.But2}>
+                <Button onPress={this.onPressxx} style={styles.But2}>
                   
                   <Text style={styles.ti1}>Leer mas</Text>
                 </Button>

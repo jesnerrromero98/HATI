@@ -15,6 +15,8 @@ import WebviewScreen from './WebviewScreen';
 import ServiScreen  from './ServiScreen';
 import { TabRouter } from '@react-navigation/routers';
 import { DrawerContent } from './DrawerContent';
+import Info1Screen from'./Info1';
+import Info2Screen from './Info2'
 
 const HomeStack = createStackNavigator();
 const WebStack= createStackNavigator();
@@ -24,6 +26,8 @@ const ExploresStack = createStackNavigator();
 const ServiStack=createStackNavigator();
 const InfoStack=createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
+const info1Stack=createStackNavigator();
+const info2Stack=createStackNavigator();
 
 const MainTabScreen = () => (
     <Tab.Navigator
@@ -221,7 +225,20 @@ const ProfileStackScreen = ({navigation}) => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#EF578E" onPress={() => navigation.openDrawer()}></Icon.Button>
         )*/
             }} />
-    
+            <info1Stack.Screen name="Infor" component={Info1Screen} options={{
+              title:'Qué hacer en caso de violencia'
+          /*headerLeft: () => (
+            <Icon.Button name="ios-menu" size={25} backgroundColor="#EF578E" onPress={() => navigation.openDrawer()}></Icon.Button>
+        )*/
+          }} />
+            <info2Stack.Screen name="Informa" component={Info2Screen} options={{
+              title:'Donde puedo acudir'
+          /*headerLeft: () => (
+            <Icon.Button name="ios-menu" size={25} backgroundColor="#EF578E" onPress={() => navigation.openDrawer()}></Icon.Button>
+        )*/
+          }} />
+
+  
     </InfoStack.Navigator>
   );
   
