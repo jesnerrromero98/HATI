@@ -74,13 +74,13 @@ const MainTabScreen = () => (
         options={{
           tabBarLabel: 'Información',
         
-          tabBarColor: '#FAAD2A',
+          tabBarColor: '#EF7F1A',
           tabBarIcon: ({ color }) => (
             <Icon name="ios-Info" color={color} size={26} />
           ),
         }}
       />
-       <Tab.Screen
+       {/* <Tab.Screen
         name="Settings"
         component={DrawerContent}
         options={{
@@ -90,7 +90,7 @@ const MainTabScreen = () => (
             <Icon name="ios-settings" color={color} size={26} />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
     
 );
@@ -212,7 +212,7 @@ const ProfileStackScreen = ({navigation}) => (
   const InfoStackScreen = ({navigation}) => (
     <InfoStack.Navigator screenOptions={{
             headerStyle: {
-            backgroundColor: '#d02860',
+            backgroundColor: '#EF7F1A',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -232,7 +232,7 @@ const ProfileStackScreen = ({navigation}) => (
         )*/
           }} />
             <info2Stack.Screen name="Informa" component={Info2Screen} options={{
-              title:'Donde puedo acudir'
+              title:'Violencia de Genero'
           /*headerLeft: () => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#EF578E" onPress={() => navigation.openDrawer()}></Icon.Button>
         )*/

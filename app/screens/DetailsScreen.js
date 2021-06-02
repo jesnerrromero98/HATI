@@ -95,7 +95,7 @@ export default class DetailsScreen extends Component {
             </CardItem>
             <Text style = {styles.separador}></Text>
             
-        <Header style = {styles.container}>
+        {/* <Header style = {styles.container}>
         <Text style = {styles.titulo}>Contacto de Emergencia</Text>
         </Header>
         <Text style = {styles.separador}></Text>
@@ -118,7 +118,7 @@ export default class DetailsScreen extends Component {
               <Right>
        
               </Right>
-            </CardItem>
+            </CardItem> */}
             <Text style = {styles.separador}></Text>
         </Content>
       </Container>

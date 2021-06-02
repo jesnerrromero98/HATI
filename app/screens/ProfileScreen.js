@@ -23,10 +23,10 @@ const ProfileScreen = () => {
         <MapView
           style={styles.mapStyle}
           initialRegion={{
-            latitude: 		12.10629,
-            longitude: 		-85.36452,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
+            latitude: 	 12.10039,
+            longitude: 		-85.37976,
+            latitudeDelta: 0.0100,
+            longitudeDelta: 0.0100,
           }}
           customMapStyle={mapStyle}>
           <Marker

@@ -16,7 +16,7 @@ export default class Info extends Component {
 
       <Container>
         <ScrollView>
-        <Content>
+        <Content >
           <Card style={{flex: 0}}>
             <CardItem>
               <Left>
@@ -55,7 +55,7 @@ export default class Info extends Component {
             <CardItem>
               <Left>
                 <Body>
-                  <Text style = {styles.titulo}>Donde puedo acudir</Text>
+                  <Text style = {styles.titulo}>Violencia de genero</Text>
 
                      </Body>
               </Left>
@@ -64,9 +64,10 @@ export default class Info extends Component {
               <Body>
                 <Image source={require('./../assets/viole.jpg')} style={{height: 200, width: 300, flex: 0}}/>
                 <Text style={styles.Text}>
-                El número 911 es una de las vías para recibir llamadas
-                para atender emergencias relacionadas a distintos tipos 
-                de violencia
+                es toda conducta o amenaza que se realiza de manera consiente
+                y que causa daño físico, psicológico, sexual o económico. Se 
+                conoce como violencia de género al maltrato que ejerce un sexo 
+                hacia el otro, que puede ser de hombre hacia la mujer o viceversa.
                </Text>
               </Body>
             </CardItem>
@@ -151,13 +152,14 @@ columna2:{
   flexDirection: 'column',
  
   width: '95%',
-  backgroundColor: 'green',
+  backgroundColor: "#EFA94A",
   height: 300,
   borderTopLeftRadius:20,
   borderBottomLeftRadius:20,
   borderBottomRightRadius:20,
   borderTopRightRadius: 20,
   marginLeft: 8,
+
   marginHorizontal: 15,
 },
 fondo:{
@@ -199,7 +201,7 @@ But2:{
   margin:-3,
   marginLeft:100,
   marginTop:7,
-  borderRadius:15,
-  backgroundColor:"red"
+  borderRadius:25,
+  backgroundColor:"#aae4"
 },
 })
