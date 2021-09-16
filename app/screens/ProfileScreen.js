@@ -51,7 +51,7 @@ const ProfileScreen = () => {
               (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
             }
             title={'Lugar Seguro'}
-            description={'Aqui Puedes Resguardarte de Cualquier Situacion Peligrosa'}
+            description={'Aqui te puedes refugiar cuando te estes en peligro'}
           />
            <Marker
             draggable
@@ -64,8 +64,61 @@ const ProfileScreen = () => {
               (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
             }
             title={'Lugar Seguro'}
-            description={'Aqui Puedes Resguardarte de Cualquier Situacion Peligrosa'}
+            description={'Aqui te puedes refugiar cuando te estes en peligro'}
           />
+          <Marker
+            draggable
+            coordinate={{
+             
+              latitude: 12.106380327410992, 
+              longitude:  -85.35732109263523,
+              
+            }}
+            onDragEnd={
+              (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
+            }
+            title={'Lugar Seguro'}
+            description={'Aqui te puedes refugiar cuando te estes en peligro'}
+          /><Marker
+          draggable
+          coordinate={{
+           
+            latitude: 12.09599352170491, 
+            longitude:  -85.36120639235959,
+             
+          }}
+          onDragEnd={
+            (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
+          }
+          title={'Lugar Seguro'}
+          description={'Aqui te puedes refugiar cuando te estes en peligro'}
+        /><Marker
+        draggable
+        coordinate={{
+         
+          latitude: 12.096374026276512,
+          longitude:  -85.36417919789137,
+           
+        }}
+        onDragEnd={
+          (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
+        }
+        title={'Lugar Seguro'}
+        description={'Aqui te puedes refugiar cuando te estes en peligro'}
+      /><Marker
+      draggable
+      coordinate={{
+       
+        latitude: 12.112482070021624,
+        longitude: -85.37257192572206,
+        
+      }}
+      onDragEnd={
+        (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
+      }
+      title={'Lugar Seguro'}
+      description={'Aqui te puedes refugiar cuando te estes en peligro'}
+    />
         </MapView>
       </View>
     </SafeAreaView>

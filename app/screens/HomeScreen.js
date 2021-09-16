@@ -22,7 +22,7 @@ render(){
         
        
         
-        <ScrollView>
+      <ScrollView> 
           
         <ExploreScreen/>
         <Content >
@@ -82,7 +82,7 @@ render(){
             </TouchableOpacity>
         </Content>
         <Text style = {styles.separador}></Text>
-        </ScrollView>
+       </ScrollView> 
        
       </Container>
       
@@ -105,7 +105,7 @@ const styles =  StyleSheet.create({
 },
 
 tit2:{
-  fontSize: 26,
+  fontSize: 18,
   fontWeight: 'bold',
   marginTop:50,
   marginStart:0,
@@ -113,7 +113,7 @@ tit2:{
   marginHorizontal:135
 },
 ti1:{
-  fontSize: 14,
+  fontSize: 20,
   fontWeight: 'bold',
   color: '#98cb40',
  marginTop:1,
@@ -123,37 +123,37 @@ ti1:{
 columna:{
   flexDirection: 'column',
  
-  width: '95%',
-  backgroundColor: '#8A56AC',
-  height: 180,
+  width: 340,
+  backgroundColor: '#1D2021',
+  height: 150,
   borderTopLeftRadius:15,
   borderBottomLeftRadius:15,
   borderBottomRightRadius:15,
   borderTopRightRadius: 15,
   marginLeft: 10,
-  marginHorizontal: 10,
+  marginHorizontal: 5,
 },
 
 columna1:{
   flexDirection: 'column',
  
-  width: '95%',
-  backgroundColor: '#FAAD2A',
-  height: 180,
+  width: 340,
+  backgroundColor: '#1D2021',
+  height: 150,
   borderTopLeftRadius:15,
   borderBottomLeftRadius:15,
   borderBottomRightRadius:15,
   borderTopRightRadius: 15,
   marginLeft: 10,
-  marginHorizontal: 10,
+  marginHorizontal: 5,
 },
 
 columna2:{
   flexDirection: 'column',
  
-  width: '95%',
-  backgroundColor: '#1f65ff',
-  height: 180,
+  width: 340,
+  backgroundColor: '#1D2021',
+  height: 150,
   borderTopLeftRadius:15,
   borderBottomLeftRadius:15,
   borderBottomRightRadius:15,
@@ -162,7 +162,7 @@ columna2:{
   marginHorizontal: 10,
 },
 fondo:{
-  backgroundColor: '#261237',
+  backgroundColor: '#0D0D0D',
 },
 
 imagen:{
@@ -174,7 +174,7 @@ imagen:{
  
 },
 separador: {
-  width: 10
+width:500
 },
 icon:{
   height: 75,

@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import  { Image, Linking , StyleSheet }
 from 'react-native';
@@ -101,8 +100,8 @@ export default class ServicioSocial extends Component {
             </CardItem>
             <Text style = {styles.separador}></Text>
             
-       {/* <Header style = {styles.container}></Header> */}
-        {/* <Text style = {styles.titulo}>Contacto de Emergencia</Text>
+        <Header style = {styles.container}>
+        <Text style = {styles.titulo}>Contacto de Emergencia</Text>
         </Header>
         <Text style = {styles.separador}></Text>
             <CardItem style = {styles.columna}>
@@ -125,7 +124,7 @@ export default class ServicioSocial extends Component {
        
               </Right>
             </CardItem>
-            <Text style = {styles.separador}></Text> */}
+            <Text style = {styles.separador}></Text>
         </Content>
       </Container>
     );

@@ -18,7 +18,7 @@ const SplashScreen = ({navigation}) => {
 
     return (
       <View style={styles.container}>
-          <StatusBar backgroundColor='#EF578E' barStyle="light-content"/>
+          <StatusBar backgroundColor='#0D0D0D' barStyle="light-content"/>
         <View style={styles.header}>
             <Animatable.Image 
                 animation="bounceIn"
@@ -28,31 +28,49 @@ const SplashScreen = ({navigation}) => {
             resizeMode="stretch"
             />
         </View>
-        <Animatable.View 
-            style={[styles.footer, {
-                backgroundColor: "#EF578E"           }]}
-            animation="fadeInUpBig"
-        >
+        <Text style={[styles.title2, {
+                color: 'white'
+            }]}>¡Basta ya de violencia!</Text>
+            <Text style={styles.text}></Text>
+
             <Text style={[styles.title, {
                 color: 'white'
-            }]}>Bienvenidos</Text>
+            }]}>Bienvenidos a HATI-HATI</Text>
+
             <Text style={styles.text}></Text>
+            
+        
+
             <View style={styles.button}>
             <TouchableOpacity onPress={()=>navigation.navigate('MainTabScreen')}>
                 <LinearGradient
-                    colors={['#DDE9EE', '#DDE9EE']}
+                    colors={['#AB2F74', '#AB2F74']}
                     style={styles.signIn}
                 >
                     <Text style={styles.textSign}>Inicio</Text>
                     <MaterialIcons 
                         name="navigate-next"
                         color="black"
-                        size={20}
+                        size={5}
+                       
                     />
                 </LinearGradient>
+               
             </TouchableOpacity>
+            <LinearGradient
+                    colors={['#000000', '#000000']}
+                    style={styles.signIn2}
+                >
+                    <Text style={styles.textSign}>Regitrarse</Text>
+                    <MaterialIcons 
+                        name="navigate-next"
+                        color="black"
+                        size={5}
+                       
+                    />
+                </LinearGradient>
             </View>
-        </Animatable.View>
+        
       </View>
     );
 };
@@ -60,12 +78,12 @@ const SplashScreen = ({navigation}) => {
 export default SplashScreen;
 
 const {height} = Dimensions.get("screen");
-const height_logo = height * 0.28;
+const height_logo = height * 0.27;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
-    backgroundColor: '#DDE9EE'
+    backgroundColor: '#0D0D0D'
   },
   header: {
       flex: 2,
@@ -74,10 +92,10 @@ const styles = StyleSheet.create({
   },
   footer: {
       flex: 1,
-      backgroundColor: '#fff',
-      borderTopLeftRadius: 30,
-      borderTopRightRadius: 30,
-      paddingVertical: 50,
+      backgroundColor: '#1D2021',
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
+      paddingVertical: 200,
       paddingHorizontal: 30
   },
   logo: {
@@ -86,28 +104,57 @@ const styles = StyleSheet.create({
   },
   title: {
       color: '#05375a',
-      fontSize: 30,
-      fontWeight: 'bold'
+      fontSize: 25,
+      fontWeight: 'bold',
+      justifyContent:'center',
+      textAlign:'center',
+      marginEnd:0,
+      marginTop:-85
   },
+  title2: {
+    color: '#05375a',
+    fontSize: 18,
+    fontWeight: 'bold',
+    justifyContent:'center',
+    textAlign:'center',
+    marginEnd:0,
+    marginTop:-90,
+    
+},
   text: {
       color: 'grey',
-      marginTop:5
+      marginTop:10
   },
   button: {
       alignItems: 'flex-end',
-      marginTop: 30
+      marginTop: 10
   },
   signIn: {
-      width: 150,
-      height: 40,
+      width: 333,
+      height: 57,
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 50,
-      flexDirection: 'row'
+      flexDirection: 'row',
+      marginBottom:30,
+      marginRight:14,
+    
   },
+  signIn2: {
+    width: 333,
+    height: 57,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 50,
+    flexDirection: 'row',
+    marginBottom:150,
+    marginRight:14,
+  
+},
   textSign: {
-      color: 'black',
-      fontWeight: 'bold'
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize:18
   }
 });
 

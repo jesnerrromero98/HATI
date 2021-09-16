@@ -30,8 +30,8 @@ export default class DetailsScreen extends Component {
             >
               
               <Left >
-                <Thumbnail 
-                source={require('./../assets/poli.png')} 
+                <Image 
+                source={require('./../assets/llama.png')} 
                 style = {styles.imagen}
                 />
                 <Body>
@@ -53,7 +53,7 @@ export default class DetailsScreen extends Component {
             <CardItem style = {styles.columna}>
               <Left >
                 <Thumbnail 
-                source={require('./../assets/Cruz-Roja.jpg')} 
+                source={require('./../assets/llama.png')} 
                 style = {styles.imagen}
                 />
                 <Body>
@@ -75,8 +75,9 @@ export default class DetailsScreen extends Component {
             <Text style = {styles.separador}></Text>
             <CardItem style = {styles.columna}>
               <Left >
+                
                 <Thumbnail 
-                source={require('./../assets/bomberos.jpg')} 
+                source={require('./../assets/llama.png')} 
                 style = {styles.imagen}
                 />
                 <Body>
@@ -127,13 +128,13 @@ export default class DetailsScreen extends Component {
 }
 const styles =  StyleSheet.create({
   container:{
-      backgroundColor: '#1f65ff',
+      backgroundColor: '#1D2021',
       flexDirection: 'column',
       alignItems: 'center',
     
   },
   titulo:{
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
     color: "#ffffff",
     textAlign:'center'
@@ -145,45 +146,50 @@ tit2:{
   marginTop:30,
   marginStart:10,
   color: '#ffffff',
-  textAlign:'auto'
+  textAlign:'center'
 },
 ti1:{
   fontSize: 14,
   color: '#ffffff',
  marginTop:1,
   marginHorizontal:10,
-  textAlign:'auto'
+  textAlign:'center'
 },
 columna:{
-  flexDirection: 'column',
+  flexDirection:'column',
  
-  width: '95%',
-  backgroundColor: '#8A56AC',
-  height: 180,
+  width: 340,
+  backgroundColor: '#1D2021',
+  height: 150,
+  borderTopLeftRadius:15,
+  borderBottomLeftRadius:15,
+  borderBottomRightRadius:15,
   borderTopRightRadius: 15,
   marginLeft: 10,
   marginHorizontal: 10,
 },
 fondo:{
-  backgroundColor: '#261237',
+  backgroundColor: '#0D0D0D',
 },
 
 imagen:{
-  width: 70,
-  height: 70,
+  width: 95,
+  height: 95,
   resizeMode: 'cover',
   borderRadius: 10,
   marginLeft: 10,
-  marginTop: 70
+  marginTop: 110,
+  
 },
 separador: {
   width: 10
 },
 icon:{
-  height: 75,
+  height: 73,
   marginTop: 55,
   marginLeft:3,
-  color: "#ffffff", 
+  color: "#ffffff",
+  fontSize:14 
 
   
 },
@@ -193,10 +199,10 @@ ic2:{
 But:{
   width: 95,
   height: 45,
-  marginTop:90,
-  marginLeft:120,
+  marginTop:60,
+  marginLeft:170,
   borderRadius:15,
-  backgroundColor:"#EF578E"
+  backgroundColor:"#90168C"
 },
 But2:{
   width: 95,
@@ -204,6 +210,6 @@ But2:{
   margin:-45,
   marginLeft:200,
   borderRadius:15,
-  backgroundColor:"#EF578E"
+  backgroundColor:"#90168C"
 },
 })

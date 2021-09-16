@@ -39,7 +39,7 @@ const MainTabScreen = () => (
         component={HomeStackScreen}
         options={{
           tabBarLabel: 'Inicio',
-          tabBarColor: '#EF578E',
+          tabBarColor: '#AB2F74',
           tabBarIcon: ({ color }) => (
             <Icon name="ios-home" color={color} size={26} />
           ),
@@ -50,7 +50,7 @@ const MainTabScreen = () => (
         component={DetailsStackScreen}
         options={{
           tabBarLabel: 'Emergencia',
-          tabBarColor: '#1f65ff',
+          tabBarColor: '#AB2F74',
           tabBarIcon: ({ color }) => (
             <Icon name="ios-call" color={color} size={26} />
           ),
@@ -62,7 +62,7 @@ const MainTabScreen = () => (
         options={{
           tabBarLabel: 'SOS',
         
-          tabBarColor: '#FAAD2A',
+          tabBarColor: '#AB2F74',
           tabBarIcon: ({ color }) => (
             <Icon name="ios-map" color={color} size={26} />
           ),
@@ -74,7 +74,7 @@ const MainTabScreen = () => (
         options={{
           tabBarLabel: 'Información',
         
-          tabBarColor: '#EF7F1A',
+          tabBarColor: '#AB2F74',
           tabBarIcon: ({ color }) => (
             <Icon name="ios-Info" color={color} size={26} />
           ),
@@ -100,7 +100,7 @@ export default MainTabScreen;
 const HomeStackScreen = ({navigation}) => (
 <HomeStack.Navigator screenOptions={{
         headerStyle: {
-        backgroundColor: '#EF578E',
+        backgroundColor: '#AB2F74',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
@@ -134,7 +134,7 @@ const HomeStackScreen = ({navigation}) => (
 const DetailsStackScreen = ({navigation}) => (
 <DetailsStack.Navigator screenOptions={{
         headerStyle: {
-        backgroundColor: '#1f65ff',
+        backgroundColor: '#AB2F74',
         },
         headerTintColor: '#fff',
         headerTitleStyle: {
@@ -154,7 +154,7 @@ const DetailsStackScreen = ({navigation}) => (
 const ServiStackScreen = ({navigation}) => (
   <ServiStack.Navigator screenOptions={{
           headerStyle: {
-          backgroundColor: '#1f65ff',
+          backgroundColor: '#AB2F74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -173,7 +173,7 @@ const ServiStackScreen = ({navigation}) => (
 const ProfileStackScreen = ({navigation}) => (
   <ProfilesStack.Navigator screenOptions={{
           headerStyle: {
-          backgroundColor: '#FAAD2A',
+          backgroundColor: '#AB2F74',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -192,7 +192,7 @@ const ProfileStackScreen = ({navigation}) => (
   const ExploreStackScreen = ({navigation}) => (
     <ExploresStack.Navigator screenOptions={{
             headerStyle: {
-            backgroundColor: '#d02860',
+            backgroundColor: '#AB2F74',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -212,7 +212,7 @@ const ProfileStackScreen = ({navigation}) => (
   const InfoStackScreen = ({navigation}) => (
     <InfoStack.Navigator screenOptions={{
             headerStyle: {
-            backgroundColor: '#EF7F1A',
+            backgroundColor: '#AB2F74',
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
